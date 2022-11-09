@@ -1,0 +1,254 @@
+/* header main nav */
+
+nav {
+  display: block;
+  box-shadow: rgba(152, 152, 152, 0.325) 0px 25px 50px;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 1em;
+}
+
+.nav-li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.nav-li li {
+  float: left;
+}
+
+.nav-li a {
+  display: inline;
+  background-color: rgb(0, 136, 255);
+  color: white !important;
+  text-align: center;
+  padding: 30px 5px;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-li a {
+    padding: 50px 20px;
+  }
+}
+
+.nav-li a:hover {
+  display: inline;
+  background-color: #124ad8;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgb(0, 136, 255);
+  border-radius: 0px 0px 20px 20px;
+}
+
+@media (min-width: 1024px) {
+  .nav-ul {
+    padding: 20px;
+  }
+}
+
+body {
+  margin: 0px 5% 5% 5%;
+  color: gray;
+  font-size: 1em;
+  font-family: "Inter", "Arial Narrow", sans-serif;
+  line-height: 1.4em;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+}
+
+main {
+  margin-bottom: 4em;
+  padding-top: 20px;
+  padding-right: 5%;
+  padding-bottom: 30px;
+  padding-left: 5%;
+}
+
+/* Typo stuff */
+
+h1 {
+  color: rgb(79, 79, 79);
+  font-size: 2.75em;
+  line-height: 1.1em;
+}
+
+h2 {
+  color: gray;
+  font-size: 2.25em;
+  line-height: 1em;
+}
+
+.underline {
+  border-bottom: 1px solid gray;
+  transition: all 0.5s;
+}
+
+/* links and lists */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(18, 74, 216);
+}
+
+a:visited {
+  color: rgb(18, 74, 216);
+}
+
+.formfield {
+  font-size: 1em;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  height: 20px;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.formfield-area {
+  font-size: 1em;
+  border-radius: 10px;
+  border: 1px solid rgb(186, 186, 186);
+  height: 150px;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* buttons */
+
+.button-blue {
+  background-color: rgb(0, 136, 255);
+  border: 2px solid rgb(0, 136, 255);
+  border-radius: 15px;
+  color: white;
+  max-width: 80%;
+  padding: 16px 20px 16px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 20px 20px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(0, 136, 255);
+  color: white !important;
+}
+
+.button1:hover {
+  background-color: rgb(18, 74, 216);
+  border: 2px solid rgb(18, 74, 216);
+  color: white;
+  border-radius: 100px;
+}
+
+.button1 :visited {
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: rgb(0, 136, 255);
+  border: 2px solid rgb(0, 136, 255);
+}
+
+.button2:hover {
+  color: rgb(18, 74, 216);
+  border: 2px solid rgb(18, 74, 216);
+  border-radius: 100px;
+}
+
+.button2 :visited {
+  color: rgb(18, 74, 216);
+}
+
+.blogpost {
+  width: 215px;
+  border: 1px solid rgb(0, 136, 255);
+  margin: 10px;
+  padding: 20px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content:flex-start;
+  justify-content: space-around;
+}
+
+.blog-title {
+  font-size: 0.9em;
+  font-family: "Inter", "Arial Narrow", sans-serif;
+  line-height: 1.2em;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(110, 110, 110, 0.45) 0px 25px 50px;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+footer {
+  font-size: 0.8em;
+  margin: 0 auto;
+  margin: 0 auto;
+  background-color: rgb(238, 238, 238);
+  box-shadow: rgba(110, 110, 110, 0.25) 0px 25px 50px;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+footer nav {
+  padding: 10px;
+}
+
+footer ul {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+}
+
+/* Media Queries */
+
+@media (min-width: 860px) {
+  .column {
+    column-count: 2;
+    column-gap: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 1em;
+  }
+}
